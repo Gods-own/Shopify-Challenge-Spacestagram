@@ -171,8 +171,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     document.querySelector('.delete-all').style.display = 'none';
                 }
         })
-
-        show_bodyImage()
     })
 
     document.querySelector('.delete-all').addEventListener('click', function() {
