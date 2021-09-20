@@ -28,8 +28,8 @@ Build a simple to use interface that makes it easy to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://github.com/Gods-own/Shopify-Challenge-Spacestagram/tree/Spacestagram)
+- Live Site URL: [Spacestagram](https://shopify-challenge-spacestagram.vercel.app/)
 
 ## Features
 
