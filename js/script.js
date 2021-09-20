@@ -15,6 +15,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let navigationLinks = document.querySelectorAll(".navigation-link");
 
+    if (!localStorage.getItem('visited')) {
+        localStorage.setItem('visited', 'true');
+        document.querySelector('.instruction').style.display = "block";
+
+    }
+    else {
+        document.querySelector('.instruction').style.display = "none";
+    }
+
+    document.querySelector('.close-instruction').addEventListener('click', function() {
+        document.querySelector('.instruction').style.display = "none";
+    })
+
     document.querySelector('.toggle-button').addEventListener('click', function() {
         document.querySelector('.navigation-list').classList.toggle('show-navList')
     })
@@ -23,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         search_form ();
         modal.style.display = 'block';
         document.querySelector('.modal-content').style.display = 'block';
+        document.querySelector('.instruction').style.display = "none";
     })
 
     document.querySelector('.close-div').addEventListener('click', function() {
@@ -78,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
             get_images();
 
             document.querySelector(".modal-content").style.display = 'none';
-            
             document.querySelector(".gallery-div").style.display = 'block';
 
         }
@@ -152,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 createGallery(data)
         })
 
-        document.querySelector('.delete-all').style.display = 'block';
+        show_bodyImage()
     })
 
     document.querySelector('.delete-all').addEventListener('click', function() {
@@ -259,7 +272,6 @@ function sendRequest(url) {
                     date: image.date,
                     isliked: checklikestate
                 })
-
             })
         gallery();
     }).catch(function(error) {
@@ -312,6 +324,7 @@ function gallery() {
     getData(db.photos, function(data) {
         createGallery(data)
     })
+
 }
 
 function createGallery(data) {
