@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spacetagram - Shopify Frontend development Challenge winter 2021
+    coded by Idumeka Oritogun"/>
+    <title>Astronomy Picture Of The Day</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <noscript>Javascript disabled, enable it to run this app.</noscript>
+   <div id="myModal" class="modal">
+       <div class="modal-content">
+
+            <div class="close-div">
+                <button>X</button>
+                <div></div>
+            </div>
+            <div class="form-header">
+                <h2>Search Images</h2>
+                <p>Fill in details to pull images</p>
+            </div>
+            <div class="form-message">
+                <p class="themessage">Cannot fill both date and start date</p>
+            </div>
+            <form id="search-form">
+                <div class="input-div">
+                    <label for="count">How many Images? (maximum 100)</label>
+                    <input class="input-field" id="count" type="number" min="1" max="100">
+                </div>
+                <div class="input-div">
+                    <label for="date">Date</label>
+                    <input class="input-field" id="date" type="date" min="1995-06-16">
+                </div>
+                <div class="input-div">
+                    <p>Do you want a high resolution picture?</p>
+                    <div id="resolution">
+                        <label for="resolution1">Yes</label>
+                        <input id="resolution1" type="radio" value="Yes" name="resolution">
+                        <label for="resolution2">No</label>
+                        <input id="resolution2" type="radio" value="No" name="resolution">  
+                    </div>
+                </div>
+                    <div id="date-range" class="input-div">
+                        <label for="startdate">Start Date</label>
+                        <input id="startdate" class="input-field" type="date" min="1995-06-16">
+                    </div>
+                    <div class="input-div">
+                        <label for="enddate">End Date</label>
+                        <input id="enddate" class="input-field" type="date" min="1995-06-16">
+                    </div>
+                <div class="submit-btn-div">
+                    <button class="submit-btn" type="submit">Search</button>
+                </div>
+            </form>
+
+       </div>
+
+       <div class="spinner"></div>
+
+   </div>
+
+    <nav>
+           <div class="logo-div">
+            <img src="images/spacetagram-logo.png" width="60px" height="48px" alt="Spacestagram logo">
+            <div>
+                <button class="toggle-button">
+                    <i class="las la-bars"></i>
+                </button>
+            </div>
+           </div>
+            <ul class="navigation-list">
+                <li><a href="#" class="all active navigation-link">All</a></li>
+                <li><a href="#" class="liked navigation-link">Liked</a></li>
+                <li><a href="#" class="unliked navigation-link">Unliked</a></li>
+            </ul>
+    </nav>
+
+    <main class="home-main">
+
+        <section class="home-section">
+
+            <img src="images/space-astronaut.png" class="nothing-img" alt="An image of an astronaut">
+
+            <button class="delete-all">Clear All</button>
+
+            <div class="gallery-div"></div>
+
+
+        </section>
+
+            <button class="add-images-btn"><i class="las la-plus"></i></button>
+
+    </main>
+
+     <footer>
+         <div>
+            <img src="images/spacetagram-logo.png" width="60px" height="48px">
+             <div class="footer-flex">
+                <div>
+                    <h4>ATTRIBUTION</h4>
+                        <ul style="list-style-type: none;">
+                            <li><a href="https://pngtree.com/so/vintage" target="_blank">Camera Image</a></li>
+                            <li><a href="https://pngtree.com/so/Astronomical" target="_blank">Rocket Image</a></li>
+                            <li><a href="https://pngtree.com/so/Space" target="_blank">Astronaut Image</a></li>
+                        </ul>
+             </div>
+             <div>
+                <h4>CONTACT</h4>
+                    <ul>
+                        <li><a href="tel: +2348172046525"><i class="las la-phone-volume"></i> +2348172046525</a></li>
+                        <li><a href="mailto: oritogunjemi@gmail.com"><i class="las la-envelope"></i> oritogunjemi@gmail.com</a></li>
+                    </ul>
+             </div>
+             <div>
+                <h4>SPACETAGRAM</h4>
+                <ul style="list-style-type: none;">
+	        		<li><a href="#/">About Us</a></li>
+	        		<li><a href="#/">Jobs</a></li>
+	        		<li><a href="#/">Press</a></li>
+	        		<li><a href="#/">Blog</a></li>
+	        	</ul>
+             </div>
+             <div>
+                <h4>INFORMATION</h4>
+                <ul style="list-style-type: none;">
+	        		<li><a href="#/">Contact Us</a></li>
+	        		<li><a href="#/">Terms</a></li>
+	        		<li><a href="#/">Privacy</a></li>
+	        	</ul>
+             </div>
+         </div>
+
+         <hr>
+
+         <small class="attribution">
+            Challenge by <a href="https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#" target="_blank">
+                Shopify</a>. 
+            </small>
+
+        </div>
+
+     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/2.0.4/dexie.min.js" integrity="sha512-OPW5ku+bS0iQpI37fP9JjFoo2o5YUuxDOcA4UyIG9GpTHpY/Yat+rnJGTjynyeQzAQclbYWja9d2Rs8NbzhhOQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.6.2/fetch.min.js" integrity="sha512-1Gn7//DzfuF67BGkg97Oc6jPN6hqxuZXnaTpC9P5uw8C6W4yUNj5hoS/APga4g1nO2X6USBb/rXtGzADdaVDeA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>     
+
+    <script src="js/script.js" type="module"></script>
+</body>
+</html>

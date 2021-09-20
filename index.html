@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Astronomy Picture Of The Day</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="styling.css" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-div">
+         <img src="images/spacetagram-logo.png" width="60px" height="48px">
+        </div>
+ </nav>
+
+ <main class="landing-main">
+    <section class="landing-section">
+        <div>
+            <header>
+                <h1 class="landing-header">Welcome to <span>Spacetagram!</span></h1>
+                <p>See cool Astronomy images</p>
+            </header>  
+            <button class="buttons explore-btn">Explore</button>  
+            
+        </div>
+    </section>
+
+    <section class="second-section">
+        <div class="second-flex-box">
+            <div class="second-flex-items">
+                <h3><i class="las la-search-plus"></i></h3>
+                <p>Want to see see cool Astronomy images? We've got you covered! 
+                    Pull Astronomy Picture (APOD) of Day images courtsey of NASA.
+                You can search either by the number of images you want or by date or by a date range.</p>
+            </div>
+            <div  class="second-flex-items">
+                <h3>
+                    <i class="lab la-readme"></i>
+                </h3>
+                <p>Guess what! You don't just get to see cool images, you also get to read about them
+                    by clicking the show description button.</p>
+            </div>
+            <div  class="second-flex-items">
+                <h3><i class="las la-thumbs-up"></i></h3>
+                <p>Have a lot of images on your page and therefore cannot find all the images you've liked?
+                    We've got you covered! Click the liked navigation link to see all your favourite images.</p>
+            </div>
+            <div  class="second-flex-items">
+                <h3><i class="las la-times-circle"></i></h3>
+                <p>Pulled images which you don't like? We've got you covered! Click on the delete button to delete
+                    the images you don't like. You can also delete all the images on your page at once by clicking the 
+                    clear all button.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="third-section">
+        <div class="third-grid-box">
+            <div class="third-grid-items">
+                <img class="rocket-img" src="images/astronomy.png" alt="An image of a rocket">
+            </div>
+            <div class="third-grid-items">
+                <h2>Are you ready?</h2>
+                <p>Getting ready to travel through space and see cool images and read about 
+                    objects beyond Earth's atmosphere. Blast off in 1 2 3 .... Go!</p>
+                <button class="buttons visit-btn">Visit Site <i class="las la-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section">
+        <div>
+            <h2>Start Exploring Cool Astronomy Pictures Now!</h2>
+        <p>You can always leave our site when you want and come back to see all the images you've
+            pulled and also all the ones you've liked.
+        </p>
+        <button class="buttons start-btn">Start Now</button>
+        </div>
+    </section>  
+    
+ </main>
+
+ <footer>
+    <div>
+       <img src="images/spacetagram-logo.png" width="60px" height="48px">
+        <div class="footer-flex">
+           <div>
+               <h4>ATTRIBUTION</h4>
+                   <ul style="list-style-type: none;">
+                       <li><a href="https://pngtree.com/so/vintage" target="_blank">Camera Image</a></li>
+                       <li><a href="https://pngtree.com/so/Astronomical" target="_blank">Rocket Image</a></li>
+                       <li><a href="https://pngtree.com/so/Space" target="_blank">Astronaut Image</a></li>
+                   </ul>
+        </div>
+        <div>
+           <h4>CONTACT</h4>
+               <ul>
+                   <li><a href="tel: +2348172046525"><i class="las la-phone-volume"></i> +2348172046525</a></li>
+                   <li><a href="mailto: oritogunjemi@gmail.com"><i class="las la-envelope"></i> oritogunjemi@gmail.com</a></li>
+               </ul>
+        </div>
+        <div>
+           <h4>SPACETAGRAM</h4>
+           <ul style="list-style-type: none;">
+               <li><a href="#/">About Us</a></li>
+               <li><a href="#/">Jobs</a></li>
+               <li><a href="#/">Press</a></li>
+               <li><a href="#/">Blog</a></li>
+           </ul>
+        </div>
+        <div>
+           <h4>INFORMATION</h4>
+           <ul style="list-style-type: none;">
+               <li><a href="#/">Contact Us</a></li>
+               <li><a href="#/">Terms</a></li>
+               <li><a href="#/">Privacy</a></li>
+           </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <small class="attribution">
+       Challenge by <a href="https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#" target="_blank">
+           Shopify</a>. 
+       </small>
+
+   </div>
+
+</footer>
+
+<script>
+    document.querySelectorAll('.buttons').forEach(function(button) {
+        button.addEventListener('click', function() {
+            window.location.href = "spacetagram.html"
+        })
+    })
+</script>
+    
+</body>
+</html>
