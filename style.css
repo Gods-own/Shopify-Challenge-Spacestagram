@@ -457,6 +457,10 @@ form {
       color: #fff;
   }
 
+.add-images-btn i {
+      text-align: center;
+  }
+
   footer {
       position: absolute;
       background: #325D8C;
