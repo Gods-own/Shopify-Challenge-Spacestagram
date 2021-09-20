@@ -78,6 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
             get_images();
 
             document.querySelector(".modal-content").style.display = 'none';
+            
+            document.querySelector(".gallery-div").style.display = 'block';
 
         }
     })
