@@ -59,5 +59,5 @@ Build a simple to use interface that makes it easy to:
 
 ## Author
 
-- Website - [Idumeka Oritogun](https://www.your-site.com)
+- Website - [Idumeka Oritogun](https://gods-own.github.io/Portfolio/)
 
