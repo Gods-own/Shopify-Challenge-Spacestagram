@@ -29,6 +29,7 @@
             <div class="form-header">
                 <h2>Search Images</h2>
                 <p>Fill in details to pull images</p>
+		<small>Note: Search either by number, date or date range</small>    
             </div>
             <div class="form-message">
                 <p class="themessage">Cannot fill both date and start date</p>
@@ -51,6 +52,8 @@
                         <input id="resolution2" type="radio" value="No" name="resolution">  
                     </div>
                 </div>
+                <div class="date-range-div"> 
+                    <p>Pick a date range less than 30 days:</p>
                     <div id="date-range" class="input-div">
                         <label for="startdate">Start Date</label>
                         <input id="startdate" class="input-field" type="date" min="1995-06-16">
@@ -59,6 +62,7 @@
                         <label for="enddate">End Date</label>
                         <input id="enddate" class="input-field" type="date" min="1995-06-16">
                     </div>
+                </div>
                 <div class="submit-btn-div">
                     <button class="submit-btn" type="submit">Search</button>
                 </div>
