@@ -338,7 +338,7 @@ function createGallery(data) {
     let url = data.hdurl ? data.hdurl : data.url
 
     element.innerHTML = `
-<img src=${url} alt=An astronomy image of ${data.title}>
+<img src=${url} alt=${data.title}>
 <div class="card-body">
 <h4>${data.title}</h4>
 <p class="image-desc">${data.explanation}</p>
