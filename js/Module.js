@@ -15,6 +15,7 @@ const bulkcreate = function(dbtable, data) {
 const getData = function(dbtable, fn) {
     let index = 0;
     let obj = {};
+    dbtable = dbtable.reverse();
 
     dbtable.count(function(number) {
         if(number) {
