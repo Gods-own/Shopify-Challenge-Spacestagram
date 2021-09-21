@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
 
         document.querySelector('.delete-all').style.display = 'none';
+         document.querySelector('.navigation-list').classList.remove('show-navList')
     })
 
     document.querySelector('.unliked').addEventListener('click', function() {
@@ -146,6 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
 
         document.querySelector('.delete-all').style.display = 'none';
+         document.querySelector('.navigation-list').classList.remove('show-navList')
     })
 
     document.querySelector('.all').addEventListener('click', function() {
@@ -171,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     document.querySelector('.delete-all').style.display = 'none';
                 }
         })
+         document.querySelector('.navigation-list').classList.remove('show-navList')
     })
 
     document.querySelector('.delete-all').addEventListener('click', function() {
