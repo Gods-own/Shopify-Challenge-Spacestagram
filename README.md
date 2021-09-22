@@ -1,6 +1,6 @@
 # SHOPIFY CHALLENGE - Frontend Development Winter Internship 2022
 
-This is a solution to the [Shopify Challenge for the role of Frontend development intern](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#heading=h.31w9woubunro).
+This is a solution to the [Shopify Challenge for the role of Frontend developer intern](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#heading=h.31w9woubunro).
 
 ## Table of contents
 
