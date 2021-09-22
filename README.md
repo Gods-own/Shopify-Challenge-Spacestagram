@@ -51,7 +51,8 @@ Build a simple to use interface that makes it easy to:
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS3
+- CSS Columns
 - Flexbox
 - CSS Grid
 - Javascript
