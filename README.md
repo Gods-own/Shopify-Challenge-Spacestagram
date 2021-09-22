@@ -1,4 +1,4 @@
-# SHOPIFY CHALLENGE - Frontend Development Winter Intenship 2022
+# SHOPIFY CHALLENGE - Frontend Development Winter Internship 2022
 
 This is a solution to the [Shopify Challenge for the role of Frontend development intern](https://docs.google.com/document/d/1QlC6htA5SXEl3YruAOkJWj2-0W3w-n0UOzGuJ1EcktQ/edit#heading=h.31w9woubunro).
 
@@ -42,7 +42,7 @@ Build a simple to use interface that makes it easy to:
     - View all images by clicking the all navigation link
     - View all their liked images by clicking the liked navigation link
     - View all their unliked images by clicking the unliked navigation link
-2. Users have the option of pulling either high resolution images or low resolution images.
+2. User has the option of pulling either high resolution images or low resolution images.
 3. The application utilizes IndexedDB to save the users images so that the
    user can leave the site and revisit and still see all pulled images.
 
