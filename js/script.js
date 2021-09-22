@@ -289,7 +289,21 @@ function sendRequest(url) {
             document.querySelector("#myModal").style.display = 'none';
         }, 2500)
         
-        Array.prototype.forEach.call(images, function(image) {
+        if (!Array.isArray(images)) {
+            checklikestate = 'false';
+
+            bulkcreate(db.photos, {
+                url: images.url,
+                hdurl: images.hdurl,
+                title: images.title,
+                explanation: images.explanation,
+                date: images.date,
+                isliked: checklikestate
+            })
+        }
+        
+        else {
+            Array.prototype.forEach.call(images, function(image) {
 
                 checklikestate = 'false';
 
@@ -302,6 +316,7 @@ function sendRequest(url) {
                     isliked: checklikestate
                 })
             })
+        }
         gallery();
     }).catch(function(error) {
         console.log('request failed', error)
