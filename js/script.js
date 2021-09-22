@@ -57,6 +57,13 @@ document.addEventListener('DOMContentLoaded', function() {
         let startDate = document.querySelector("#startdate").value;
         let endDate = document.querySelector("#enddate").value;
         let count = document.querySelector("#count").value;
+        
+        // Get the difference between start date and end date
+        let date1 = new Date(startDate);
+        let date2 = new Date(endDate);
+
+        let dateTimeDifference = date2.getTime() - date1.getTime();
+        let dateDaysDifference = dateTimeDifference / (1000 * 3600 * 24);
 
         if (date != "" && startDate != "") {
             document.querySelector(".themessage").innerHTML = "Cannot fill both date and start date field";
@@ -81,6 +88,20 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         else if (startDate != "" && count != "" || endDate != "" && count != "") {
             document.querySelector(".themessage").innerHTML = "Cannot fill both start date and count field or end date and count field"; 
+            document.querySelector(".form-message").style.display = 'block';
+            setTimeout(function() {
+                document.querySelector(".form-message").style.display = 'none';
+            },2500)
+        }
+        else if (date == "" && count == "" && startDate == "" && endDate == "") {
+            document.querySelector(".themessage").innerHTML = "Please input a field"; 
+            document.querySelector(".form-message").style.display = 'block';
+            setTimeout(function() {
+                document.querySelector(".form-message").style.display = 'none';
+            },2500)
+        }
+        else if (parseInt(dateDaysDifference, 10) > 5) {
+            document.querySelector(".themessage").innerHTML = "Choose a range less than 6"; 
             document.querySelector(".form-message").style.display = 'block';
             setTimeout(function() {
                 document.querySelector(".form-message").style.display = 'none';
