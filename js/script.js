@@ -375,7 +375,12 @@ function gallery() {
     }
 
     getData(db.photos, function(data) {
-        createGallery(data)
+        if (data != 0) {
+            createGallery(data)
+        }
+        else {
+            return
+        }
     })
 
 }
