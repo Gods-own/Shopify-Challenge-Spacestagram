@@ -185,15 +185,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     
         getData(db.photos, function(data) {
-                createGallery(data)
-            
-             if (document.querySelector('.gallery-div').hasChildNodes()) {
-                    document.querySelector('.delete-all').style.display = 'block';
-                }
-                else {
-                    document.querySelector('.delete-all').style.display = 'none';
-                }
+            createGallery(data)
         })
+        
+        if (document.querySelector('.gallery-div').hasChildNodes()) {
+             document.querySelector('.delete-all').style.display = 'block';
+        }
+        else {
+            document.querySelector('.delete-all').style.display = 'none';
+        }
          document.querySelector('.navigation-list').classList.remove('show-navList')
     })
 
